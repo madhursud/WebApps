@@ -15,7 +15,6 @@ function App(){
 
     const [animals, setAnimals] = useState([]);
     
-
     const handleClick = () => {
         //setAnimals( animals.push(getRandomAnimal()));
         setAnimals([...animals, getRandomAnimal()]);
@@ -27,7 +26,7 @@ function App(){
 
     return <div className='app'>
         <button onClick={handleClick}> Add Button</button>
-        <div>{renderedAnimals}</div>
+        <div className='animal-list'>{renderedAnimals}</div>
     </div>
 }
 
